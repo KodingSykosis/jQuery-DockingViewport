@@ -22,7 +22,12 @@
         
         _initRegion: function (config, name) {
             var regionConfig = this._super(config, name);
+
+            regionConfig.el.panelgroup({                
+                
+            });
             
+            return regionConfig;
         }
     });
 })(jQuery);

@@ -1,24 +1,32 @@
 ﻿<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <title>jQuery-DockingViewPort</title>
-    <link type="text/css" rel="stylesheet" href="//cdn.kodingsykosis.com/jQueryUI/1.10.2/themes/base/jquery.ui.all.css" />
-    <link type="text/css" rel="stylesheet" href="//cdn.kodingsykosis.com/css/jQuery.ui.ViewPort.css"></link>
-    <link type="text/css" rel="stylesheet" href="//cdn.kodingsykosis.com/css/jQuery.ui.panel.css"></link>
-    <link type="text/css" rel="stylesheet" href="css/Example.css"></link>
+    <head>
+        <title>jQuery-DockingViewPort</title>
+        <link type="text/css" rel="stylesheet" href="//cdn.kodingsykosis.com/jQueryUI/1.10.2/themes/base/jquery.ui.all.css" />
+        <link type="text/css" rel="stylesheet" href="//cdn.kodingsykosis.com/css/jQuery.ui.ViewPort.css"></link>
+        <!--<link type="text/css" rel="stylesheet" href="//cdn.kodingsykosis.com/css/jQuery.ui.panel.css"></link>-->
+        <link type="text/css" rel="stylesheet" href="css/jQuery.ui.panel.css"></link>
+        <link type="text/css" rel="stylesheet" href="css/jqtree.css"></link>
+        <link type="text/css" rel="stylesheet" href="css/Example.css"></link>
 
-    <script type="text/javascript" src="//cdn.kodingsykosis.com/jQuery/1.9.1/jQuery.js"></script>
-    <script type="text/javascript" src="//cdn.kodingsykosis.com/jQueryUI/1.10.2/jquery-ui.js"></script>
-    <script type="text/javascript" src="//cdn.kodingsykosis.com/scripts/jQuery.ui.ViewPort.js"></script>
-    <script type="text/javascript" src="//cdn.kodingsykosis.com/scripts/jQuery.ui.panel.js"></script>
-    <script type="text/javascript" src="Scripts/jQuery.ui.DockingViewPort.js"></script>
-    <script type="text/javascript" src="Scripts/Example.js"></script>
-</head>
-<body>
-    <div id="west"></div>
-    <div id="south"></div>
-    <div id="east"></div>
-    <div id="north"></div>
-    <div id="center"></div>
-</body>
+        <script type="text/javascript" src="//cdn.kodingsykosis.com/jQuery/1.9.1/jQuery.js"> </script>
+        <script type="text/javascript" src="//cdn.kodingsykosis.com/jQueryUI/1.10.2/jquery-ui.js"> </script>
+        <script type="text/javascript" src="//cdn.kodingsykosis.com/scripts/jQuery.ui.ViewPort.js"> </script>
+        <!--<script type="text/javascript" src="//cdn.kodingsykosis.com/scripts/jQuery.ui.panel.js"> </script>-->
+        <script type="text/javascript" src="Scripts/jQuery.ui.panel.js"> </script>
+        <script type="text/javascript" src="Scripts/jQuery.ui.PanelGroup.js"> </script>
+        <script type="text/javascript" src="Scripts/jQuery.ui.DockingViewPort.js"> </script>
+        <script type="text/javascript" src="Scripts/tree.jquery.js"> </script>
+        <script type="text/javascript" src="Scripts/Example.js"> </script>
+    </head>
+    <body>
+        <div id="west">
+            <div id="solutionTree" title="Project"></div>
+            <div id="classTree" title="Class"></div>
+        </div>
+        <div id="south"></div>
+        <div id="east"></div>
+        <div id="north"></div>
+        <div id="center"></div>
+    </body>
 </html>

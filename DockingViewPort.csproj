@@ -58,9 +58,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="css\Example.css" />
+    <Content Include="css\jqtree.css" />
+    <Content Include="css\jQuery.ui.panel.css" />
     <Content Include="index.html" />
     <Content Include="Scripts\Example.js" />
     <Content Include="Scripts\jQuery.ui.DockingViewPort.js" />
+    <Content Include="Scripts\jQuery.ui.panel.js" />
+    <Content Include="Scripts\tree.jquery.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
