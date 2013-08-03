@@ -44,14 +44,12 @@
                 this.panel =
                     this.content.parent();
 
-                if (!this.panel.is(this.element)) {
-                    this.panel
-                        .on({
-                            resize: $.proxy(this._onResize, this),
-                            drag: $.proxy(this._onDrag, this)
-                        });
-                }
-
+                this.panel
+                    .on({
+                        resize: $.proxy(this._onResize, this),
+                        drag: $.proxy(this._onDrag, this)
+                    })
+                    .data($.camelCase(this.widgetFullName), this);
             }
 
             if (this.header.length == 0 && showHeader !== false) {
@@ -168,6 +166,17 @@
                 .text();
         },
 
+        close: function (evt) {
+            if (!evt) evt = $.Event('closing');
+            evt.index = this.panel.index();
+            if (!this._trigger('closing', evt)) return;
+
+            this.panel
+                .remove();
+
+            this._trigger('close', evt);
+        },
+
         _createHeader: function() {
             this.header = $('<div>', {
                 'class': 'ui-panel-header ui-accordin-header',
@@ -221,13 +230,7 @@
         },
 
         _onCloseClicked: function (evt) {
-            evt.index = this.panel.index();
-            if (!this._trigger('closing', evt)) return;
-
-            this.panel
-                .remove();
-            
-            this._trigger('close', evt);
+            this.close(evt);
         },
 
         _onCollapseClicked: function (event) {

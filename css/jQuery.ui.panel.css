@@ -1,5 +1,6 @@
 ﻿.ui-panel {
     position: relative;
+    overflow: hidden;
 }
 
 .ui-panel-header {

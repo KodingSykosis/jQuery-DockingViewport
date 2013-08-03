@@ -1,0 +1,26 @@
+﻿.ui-panel-group-titlebar {
+    height: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 2px 4px 2px 8px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.ui-panel-group-titlebar-buttons {
+    list-style: none;
+    height: 24px;
+    float: right;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.ui-panel-group-titlebar-button {
+    height: 16px;
+    clear: none;
+    display: inline-block;
+    margin: 0 2px;
+    cursor: pointer;
+}

@@ -60,6 +60,7 @@
     <Content Include="css\Example.css" />
     <Content Include="css\jqtree.css" />
     <Content Include="css\jQuery.ui.panel.css" />
+    <Content Include="css\jQuery.ui.PanelGroup.css" />
     <Content Include="index.html" />
     <Content Include="Scripts\Example.js" />
     <Content Include="Scripts\jQuery.ui.DockingViewPort.js" />

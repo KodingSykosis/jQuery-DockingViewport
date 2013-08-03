@@ -23,11 +23,18 @@
         _initRegion: function (config, name) {
             var regionConfig = this._super(config, name);
 
-            regionConfig.el.panelgroup({                
-                
-            });
+            regionConfig.el.panelgroup();
             
             return regionConfig;
+        },
+        
+        reset: function(skipRefresh) {
+            this._super(skipRefresh);
+            $.each(this.regions, function(regionName, config) {
+                if (!config) return;
+
+                config.el.panelgroup('refresh');
+            });
         }
     });
 })(jQuery);
